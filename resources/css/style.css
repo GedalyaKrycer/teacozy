@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,6 +9,10 @@ body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
+}
+
+h2 {
+  padding-bottom: 15px;
 }
 
 /* Nav Bar */
@@ -20,6 +25,7 @@ header {
   z-index: 1;
   align-items: center;
   justify-content: space-between;
+  background-color: black;
 }
 
 nav span {
@@ -31,11 +37,133 @@ nav a {
   color: seashell;
 }
 
+nav a:hover {
+  background-color: seashell;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+}
+
 header img {
   height: 50px;
   padding-left: 10px;
 }
 
-/* —— Main Content —— */
+/* ————— Main Content ————— */
+.main-content {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Hero Image*/
+.hero {
+  display: flex;
+  height: 700px;
+  width: 1200px;
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
+  margin-top: 69px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-overlay {
+  background-color: black;
+  width: 100%;
+  padding: 10px 5px;
+}
+
+/* Tea of the Month */
+.tea-month {
+  display: flex;
+  width: 1000px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 80px 0;
+}
+
+.tea-types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product {
+  margin: 10px;
+}
+
+.product img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+/* Locations */
+.locations {
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
+  height: 500px;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.l-content {
+  display: flex;
+  width: 1000px;
+  justify-content: space-around;
+}
+
+.card {
+  flex-basis: 300px;
+  background-color: black;
+  opacity: 1;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  align-self: stretch;
+}
+
+.card ul {
+  list-style: unset;
+}
+
+.card p {
+  padding: 20px 0px;
+}
+
+/* Footer */
+footer .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+}
+
+.copyright {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 40px;
+
+}
